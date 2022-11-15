@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jour 01 - Job 02</title>
+    <title>Jour 02 - Job 02</title>
 </head>
 <body>
     <?php 
-        // This is a single-line comment
-
-        for ($i = 1; $i <= 2; $i++) {
-            echo "<p>Hello LaPlateforme !</p>";
+    for ($i = 0; $i <= 1337; $i++) {
+        if ($i === 26 || $i === 37 || $i === 88 || $i === 1111){
+        echo "<p><br/></p>";
         }
-
-        /* This is a
-        multi-line
-        comment */
+        else {
+            echo "<p>$i</p>";
+        }
+    }
+    
     ?> 
 </body>
 </html>
+
