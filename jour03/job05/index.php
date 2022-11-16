@@ -19,32 +19,28 @@
 </head>
 <body>
     <?php
-       $str = "On n’est pas le meilleur quand on le croit mais quand on le sait";
+        $str = "On n’est pas le meilleur quand on le croit mais quand on le sait";
        
-       $vowels = ["A", "a", "E", "e", "I", "i", "O", "o", "U", "u", "Y", "y"];
-       $consonants = ["z","r","t","p","q","s","d","f","g","h","j","k","l","m","w","x","c","v","b","n"];
+        $dic=[
+            "vowels" => ["A", "a", "E", "e", "I", "i", "O", "o", "U", "u", "Y", "y"],
+            "consonants" => ["z","r","t","p","q","s","d","f","g","h","j","k","l","m","w","x","c","v","b","n"]
+        ];
+        $countV = 0;
+        $countC = 0;
 
-       $countV = 0;
-       $countC = 0;
 
-
-       for($i = 0; isset($str[$i]); $i++){
-        foreach($vowels as $vowel){
-            if($str[$i] === $vowel){
-                $countV++;
+        for($i = 0; isset($str[$i]); $i++){
+            foreach($dic["vowels"] as $vowel){
+                if($str[$i] === $vowel){
+                    $countV++;
                 }
             }
-        foreach($consonants as $consonant){
-            if($str[$i] === $consonant){
-                $countC++;
+            foreach($dic["consonants"] as $consonant){
+                if($str[$i] === $consonant){
+                    $countC++;
                 }
             }
         }
-
-        $dic = [
-            "nbrVowels" => $countV,
-            "nbrConsonants" => $countC
-        ];
         
     ?>
     <table>
@@ -56,8 +52,8 @@
         </thead>
         <tbody>
             <tr>
-                <td><?php echo $dic["nbrConsonants"];?></td>
-                <td><?php echo $dic["nbrVowels"];?></td>
+                <td><?php echo $countC;?></td>
+                <td><?php echo $countV;?></td>
             </tr>
         </tbody>
     </table>
