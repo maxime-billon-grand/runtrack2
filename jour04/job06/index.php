@@ -7,10 +7,27 @@
     <title>Jour 04 - Job 06</title>
 </head>
 <body>
-    <ul>
+
+    <form action="index.php" method="post"> 
+        <div>
+            <label for="name">Nombre :</label>
+            <input type="text" id="name" name="number" />
+        <div>
+        <input type="submit" value="Calcul">
+    </form>
+
     <?php
 
-    ?>
-    </ul> 
+    if ($_POST){
+        if($_POST["number"] % 2 === 0){
+            echo "<p>".$_POST["number"]." est un nombre pair</p>";
+        }
+        else{
+            echo "<p>".$_POST["number"]." est un nombre impair</p>";
+        }
+    }
+
+        ?>
+    
 </body>
 </html>
