@@ -15,13 +15,13 @@
     <form action="index.php" method="post"> 
         <div>
             <label for="width">Largeur :</label>
-            <input type="text" id="width" name="width" />
+            <input type="text" class="max" name="width" />
         <div>
         <div>
             <label for="height">Hauteur :</label>
-            <input type="text" id="height" name="height" />
+            <input type="text" class="max" name="height" />
         <div>
-        <input type="submit" value="Calcul">
+        <input type="submit" value="Dessiner la maison">
     </form><br/>
 
 
