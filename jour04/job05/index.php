@@ -7,10 +7,32 @@
     <title>Jour 04 - Job 05</title>
 </head>
 <body>
-    <ul>
-    <?php
 
+    <?php
+    if(!$_POST){ ?>
+
+    <form action="index.php" method="post"> 
+        <div>
+            <label for="name">Identifiant :</label>
+            <input type="text" id="name" name="username" />
+        <div>
+        <div>
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" />
+        </div>
+        <input type="submit" value="Connexion">
+    </form>
+
+    <?php
+    }
+    else {
+        if($_POST["username"] === "John" && $_POST["password"] === "Rambo"){
+            echo "C'est pas ma guerre";
+        }
+        else{
+            echo "Votre pire cauchemar";
+        }
+    }
     ?>
-    </ul> 
 </body>
 </html>
