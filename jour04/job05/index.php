@@ -13,8 +13,8 @@
 
     <form action="index.php" method="post"> 
         <div>
-            <label for="name">Identifiant :</label>
-            <input type="text" id="name" name="username" />
+            <label for="username">Identifiant :</label>
+            <input type="text" id="username" name="username" />
         <div>
         <div>
             <label for="password">Mot de passe :</label>

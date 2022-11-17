@@ -10,8 +10,8 @@
 
     <form action="index.php" method="post"> 
         <div>
-            <label for="name">Nombre :</label>
-            <input type="text" id="name" name="number" />
+            <label for="number">Nombre :</label>
+            <input type="text" id="number" name="number" />
         <div>
         <input type="submit" value="Calcul">
     </form>
