@@ -25,15 +25,14 @@
     ?>
 </head>
 <body>
-
     <form action="index.php" method="post">
         <div class="form-row">
             <label for="style-select">Style :</label>
             <select name="style" id="style-select">
-                <option value="style_1">Style 1</option>
-                <option value="style_2">Style 2</option>
-                <option value="style_3">Style 3</option>
-                <option value="style_4">Style 4</option>
+                <option value="style_1" <?php echo (isset($_POST)) ? (($_POST["style"] == "style_1") ? "selected" : NULL) : NULL ;?> >Style 1</option>
+                <option value="style_2" <?php echo (isset($_POST)) ? (($_POST["style"] == "style_2") ? "selected" : NULL) : NULL ;?> >Style 2</option>
+                <option value="style_3" <?php echo (isset($_POST)) ? (($_POST["style"] == "style_3") ? "selected" : NULL) : NULL ;?> >Style 3</option>
+                <option value="style_4" <?php echo (isset($_POST)) ? (($_POST["style"] == "style_4") ? "selected" : NULL) : NULL ;?> >Style 4</option>
             </select>
         </div>
         <input type="submit" value="Choisir">
