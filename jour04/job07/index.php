@@ -13,21 +13,23 @@
 </head>
 <body>
     <form action="index.php" method="post"> 
-        <div>
-            <label for="width">Largeur :</label>
-            <input type="text" class="max" name="width" />
-        <div>
+
         <div>
             <label for="height">Hauteur :</label>
             <input type="text" class="max" name="height" />
         <div>
+        <div>
+            <label for="width">Largeur :</label>
+            <input type="text" class="max" name="width" />
+        <div>
         <input type="submit" value="Dessiner la maison">
-    </form><br/>
+    </form>
+    <br/>
 
 
     <?php
     if ($_POST){
-// MLOOP for the roof
+// MLOOP for the roof (width of the roof determined by the height)
         for($h=1; $h <= $_POST["height"]; $h++){
             // Aloop for the space before the /
             for ($spaceBefore = 1; $spaceBefore <= ($_POST["height"] - $h); $spaceBefore++){
