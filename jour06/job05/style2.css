@@ -1,0 +1,27 @@
+*{
+    font-family:'Castellar';
+    font-size:20px;
+    background-color: green;
+}
+
+form{
+    display: flex;
+    flex-direction:column;
+    margin-top: 10%;
+}
+
+.form-row{
+    display:flex;
+    justify-content: center;
+}
+
+label{
+    margin-right:2%;
+}
+
+input{
+    width:max-content;
+    margin: 2% auto;
+    font-weight:900;
+    padding:1em;
+}

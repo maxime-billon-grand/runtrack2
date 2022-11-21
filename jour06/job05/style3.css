@@ -1,0 +1,32 @@
+*{
+    font-family:'Symbol';
+    font-size:20px;
+}
+
+body{
+    background: url(https://img.freepik.com/free-vector/antique-columns-set-figured-pillars-balustrade_107791-1272.jpg?w=1480&t=st=1669029446~exp=1669030046~hmac=bc8470b8e67290eef65a09a330acd85ec7d7309b87411249d22d73f779419ab4);
+    background-size: cover;
+}   
+
+form{
+    display: flex;
+    flex-direction:column;
+    margin-top: 20%;
+}
+
+.form-row{
+    display:flex;
+    justify-content: center;
+}
+
+label{
+    margin-right:2%;
+
+}
+
+input{
+    width:max-content;
+    margin: 2% auto;
+    font-weight:900;
+    padding:1em;
+}

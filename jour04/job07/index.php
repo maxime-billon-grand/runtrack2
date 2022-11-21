@@ -17,11 +17,11 @@
         <div>
             <label for="height">Hauteur :</label>
             <input type="text" class="max" name="height" />
-        <div>
+        </div>
         <div>
             <label for="width">Largeur :</label>
             <input type="text" class="max" name="width" />
-        <div>
+        </div>
         <input type="submit" value="Dessiner la maison">
     </form>
     <br/>
