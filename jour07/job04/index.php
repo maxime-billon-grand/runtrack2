@@ -7,6 +7,30 @@
     <title>Jour 07 - Job 04</title>
 </head>
 <body>
+    <?php
+    function calcule($val1, $op, $val2){
+        switch($op){
+            case "+":
+                return $val1 + $val2;
+                break;
+            case "-":
+                return $val1 - $val2;
+                break;
+            case "*":
+                return $val1 * $val2;
+                break;
+            case "/":
+                return $val1 / $val2;
+                break;
+            case "%":
+                return $val1 % $val2;
+                break;
+        }
+    }
+
+    echo calcule(2, "/", 3);
+
+    ?>
     
 </body>
 </html>
