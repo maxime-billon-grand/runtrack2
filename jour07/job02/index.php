@@ -7,6 +7,23 @@
     <title>Jour 07 - Job 02</title>
 </head>
 <body>
+    <?php
+    function bonjour($jour){
+        if ($jour){
+            echo "Bonjour";
+        }
+        else {
+            echo "Bonsoir";
+        }
+    }
+
+    $myBool = True;
+    
+    bonjour($myBool);
+
+    ?>
+
+
     
 </body>
 </html>
