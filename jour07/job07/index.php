@@ -54,6 +54,8 @@ function gras($str){
     }
 }
 
+// Find the place of the character in the alphabet
+// Return [Is uppercase, place in the alphabet]
 function findIndex($char){
     $alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
     for ($i=0; isset($alphabet[$i]); $i++) { 
@@ -68,6 +70,7 @@ function findIndex($char){
         return [False, $index];
     }
 }
+
 
 function cesar($str, $decal){
     $lower=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
@@ -84,6 +87,7 @@ function cesar($str, $decal){
     }
     return $str;
 }
+
 
 function plateforme($str){
     $arr=explosion($str);
@@ -102,7 +106,7 @@ function plateforme($str){
 ?>
 
 <!-- FORM IN A TABLE -->
-<form action="index.php" method="get">
+<form action="index.php" method="get" style="margin-bottom: 2em;">
     <table>
         <thead>
             <tr>
@@ -130,6 +134,7 @@ function plateforme($str){
 
 <?php
 
+// If each field of the form is filled
 if(isset($_GET["str"]) && isset($_GET["function"]) && isset($_GET["dclg"])){
 
     switch ($_GET["function"]){
