@@ -11,7 +11,6 @@
         if(isset($_POST["reset"])){
             setcookie('nbrVisit', 1, time()+3600*2);
             header("Location: index.php");
-            exit();
         }
 
         if(isset($_COOKIE['nbrVisit'])){
