@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jour 10 - Job 02</title>
+    <title>Jour 10 - Job 07</title>
     <style>
         table{
             border: 2px solid black;
@@ -21,28 +21,18 @@
 <body>
     <?php
         $connect = new mysqli('localhost', 'root', '', 'jour09');
-        $query = 'SELECT `nom`, `capacite` FROM `salles`';
+        $query = 'SELECT SUM(superficie) FROM `etage`';
         $result = $connect->query($query);
-        $fetched_result = $result->fetch_all();
-        
+        $fetched_result = $result->fetch_array();
     ?>
     <table>
         <thead>
-            <th>Nom</th>
-            <th>Capacité</th>
+            <th>Superficie totale des étages</th>
         </thead>
         <tbody>
-
-            <?php
-            foreach($fetched_result as $line){
-                echo '<tr>';
-                foreach($line as $value){
-                    echo "<td>$value</td>";
-                }
-                echo '</tr>';
-            }
-            ?>
-
+            <tr>
+                <td><?php echo $fetched_result[0];?></td>
+            </tr>
         </tbody>
     </table>
     

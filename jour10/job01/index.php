@@ -9,10 +9,11 @@
         table{
             border: 2px solid black;
         }
-        
+
         th, td {
             border: 2px solid black;
             padding: 1em;
+            text-align: center;
         }
     </style>
 
@@ -23,11 +24,7 @@
         $query = 'SELECT `prenom`, `nom`, `naissance`, `sexe`, `email` FROM `etudiants`';
         $result = $connect->query($query);
         $fetched_result = $result->fetch_all();
-        
-        
-
-
-
+    
     ?>
     <table>
         <thead>
